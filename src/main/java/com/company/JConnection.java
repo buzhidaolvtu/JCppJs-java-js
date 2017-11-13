@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -37,7 +37,7 @@ public class JConnection {
         Map e1 = new HashMap();
         e1.put("x0", "a");
         e1.put("x1", "b");
-        e1.put("x2", LocalDateTime.now());
+        e1.put("x2", LocalDate.now());
         arrayList.add(e1);
 
         String s = JSON.toJSONString(arrayList);

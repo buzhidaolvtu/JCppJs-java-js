@@ -25,7 +25,7 @@ public class HelloJNI {
         System.out.println("[java]" + s);
         System.out.println("[java]====================================================================");
         s = context.executeScript(
-                "query"
+                "query;"
         );
         System.out.println("[java]" + s);
         context.close();
